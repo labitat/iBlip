@@ -7,8 +7,8 @@
 //
 
 #import "LABBlipViewController.h"
-
-
+#import "LABService.h"
+#import "LABCorePlotView.h"
 
 @implementation LABBlipViewController
 
@@ -33,15 +33,42 @@
 {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
+
     // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
 
+- (NSNumber *) numberForPlot: (CPPlot *) plot field: (NSUInteger) fieldEnum recordIndex:(NSUInteger)index
+{
+    NSLog(@"Foo");
+    return [NSNumber numberWithInt:42] ;
+}
+
+- (NSUInteger) numberOfRecordsForPlot:(CPPlot *)plot
+{
+    NSLog(@"bar");
+
+    return 42;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    LABCorePlotView *coreplotview=[[LABCorePlotView alloc]initWithFrame:CGRectMake(0, 200, 300, 200)];
+    CPPlot *plot = [[CPPlot alloc]init];
+    plot.dataSource=self;
+    plot.delegate=self;
+    [[coreplotview graph] addPlot:plot];
+    [[self view] addSubview:coreplotview];
+
+    LABService *service = [[LABService alloc] init];
+    [service fetchBlip:^(NSString *dataString) {
+        NSLog(@"Data: %@", dataString);
+        [blip setText:dataString];
+    }];
+
     // Do any additional setup after loading the view from its nib.
 }
 

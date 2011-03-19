@@ -24,6 +24,7 @@
 		1C55CEEB1334BF3E00770377 /* LABBlipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CEE91334BF3E00770377 /* LABBlipViewController.m */; };
 		1C55CEEC1334BF3E00770377 /* LABBlipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C55CEEA1334BF3E00770377 /* LABBlipViewController.xib */; };
 		8110D0921334D3320005409B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8110D0911334D3320005409B /* QuartzCore.framework */; };
+		815242441334E75900E436CF /* LABCorePlotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 815242431334E75900E436CF /* LABCorePlotView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		1C55CEE91334BF3E00770377 /* LABBlipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LABBlipViewController.m; path = classes/controllers/LABBlipViewController.m; sourceTree = "<group>"; };
 		1C55CEEA1334BF3E00770377 /* LABBlipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LABBlipViewController.xib; path = classes/controllers/LABBlipViewController.xib; sourceTree = "<group>"; };
 		8110D0911334D3320005409B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		815242421334E75900E436CF /* LABCorePlotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LABCorePlotView.h; sourceTree = "<group>"; };
+		815242431334E75900E436CF /* LABCorePlotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LABCorePlotView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				1C55CEED1334DE4600770377 /* Resources */,
+				815242401334E71600E436CF /* Views */,
 				1C55CEE71334BEFB00770377 /* Controllers */,
 				1C55CEBE1334BC5400770377 /* iBlipAppDelegate.h */,
 				1C55CEBF1334BC5400770377 /* iBlipAppDelegate.m */,
@@ -186,6 +190,15 @@
 				1C55CEC11334BC5400770377 /* MainWindow.xib */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		815242401334E71600E436CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				815242421334E75900E436CF /* LABCorePlotView.h */,
+				815242431334E75900E436CF /* LABCorePlotView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +313,7 @@
 				1C55CEC01334BC5400770377 /* iBlipAppDelegate.m in Sources */,
 				1C55CEE61334BEA500770377 /* LABService.m in Sources */,
 				1C55CEEB1334BF3E00770377 /* LABBlipViewController.m in Sources */,
+				815242441334E75900E436CF /* LABCorePlotView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
