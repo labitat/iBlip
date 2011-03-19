@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface LABBlipViewController : UIViewController {
+@interface LABBlipViewController : UIViewController <CPPlotDataSource> {
     
     IBOutlet UILabel *blip;
 }
