@@ -11,17 +11,77 @@
 
 @implementation LABService
 
--(void)fetchBlip:(void(^)())aBlock {
-    _block = [aBlock copy];
-    connection = [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://space.labitat.dk/last"]] delegate:self];
++(void)initialize {
+    LABITAT_URL = @"http://space.labitat.dk";
 }
 
+-(id)init {
+    self = [super init];
+    if (self) {
+        stack = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
+-(void)dealloc {
+    [stack release];
+    [super dealloc];
+}
+
+#pragma mark Instance methods implementation
+
+-(void)fetchBlip:(void(^)())aBlock {
+    NSURLConnection *conn = [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/blip", LABITAT_URL]]] delegate:self];
+    NSDictionary *tempDic = [NSMutableDictionary dictionaryWithObjectsAndKeys:conn, @"connection", [[aBlock copy] autorelease], @"callback", nil];
+    [stack addObject:tempDic];
+}
+
+-(void)fetchLast:(void(^)())aBlock {
+    NSURLConnection *conn = [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/last", LABITAT_URL]]] delegate:self];
+    NSDictionary *tempDic = [NSMutableDictionary dictionaryWithObjectsAndKeys:conn, @"connection", [[aBlock copy] autorelease], @"callback", nil];
+    [stack addObject:tempDic];
+}
+
+-(void)fecthLast:(void(^)())aBlock withMilliseconds:(int)milliseconds {
+    NSURLConnection *conn = [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/last/%i", LABITAT_URL, milliseconds]]] delegate:self];
+    NSDictionary *tempDic = [NSMutableDictionary dictionaryWithObjectsAndKeys:conn, @"connection", [[aBlock copy] autorelease], @"callback", nil];
+    [stack addObject:tempDic];
+}
+
+-(void)fecthSince:(void(^)())aBlock withMilliseconds:(int)milliseconds {
+    NSURLConnection *conn = [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/since/%i", LABITAT_URL, milliseconds]]] delegate:self];
+    NSDictionary *tempDic = [NSMutableDictionary dictionaryWithObjectsAndKeys:conn, @"connection", [[aBlock copy] autorelease], @"callback", nil];
+    [stack addObject:tempDic];
+}
+
+#pragma mark NSURLConnection delegate implementation
+
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-    dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSMutableString *dataString = [[NSMutableString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    for (NSMutableDictionary *dic in stack) {
+        NSURLConnection *conn = [dic objectForKey:@"connection"];
+        if ([connection isEqual:conn]) {
+            NSMutableString *tempDataString = [NSMutableString string];
+            if ([dic objectForKey:@"data"]) {
+                tempDataString = [dic objectForKey:@"data"];
+                [tempDataString appendString:dataString];
+            } else {
+                tempDataString = dataString;
+            }
+            [dic setObject:tempDataString forKey:@"data"];
+        }
+    }
+    [dataString release];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    _block(dataString);
+    for (NSDictionary *dic in stack) {
+        NSURLConnection *conn = [dic objectForKey:@"connection"];
+        if ([connection isEqual:conn]) {
+            void (^block)() = [dic objectForKey:@"callback"];
+            block([dic objectForKey:@"data"]);
+        }
+    }
 }
 
 @end

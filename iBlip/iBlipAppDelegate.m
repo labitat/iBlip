@@ -19,6 +19,7 @@
     // Override point for customization after application launch.
     LABBlipViewController *blipViewController = [[LABBlipViewController alloc] initWithNibName:@"LABBlipViewController" bundle:nil];
     [self.window setRootViewController:blipViewController];
+    [blipViewController release];
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -7,11 +7,12 @@
 //
 
 #import "LABBlipViewController.h"
-#import "LABService.h"
+
 
 
 @implementation LABBlipViewController
 
+/*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -20,6 +21,7 @@
     }
     return self;
 }
+ */
 
 - (void)dealloc
 {
@@ -40,11 +42,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    LABService *service = [[LABService alloc] init];
-    [service fetchBlip:^(NSString *dataString) {
-        NSLog(@"Data: %@", dataString);
-        [blip setText:dataString];
-    }];
     // Do any additional setup after loading the view from its nib.
 }
 

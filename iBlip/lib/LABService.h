@@ -8,15 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString *LABITAT_URL;
 
 @interface LABService : NSObject {
     @private
-    NSURLConnection *connection;
-    NSString *dataString;
+    NSMutableArray *stack;
     
-    void (^_block)();
+    // Saved for later reference
+    //void (^_block)();
 }
 
 -(void)fetchBlip:(void(^)())aBlock;
+-(void)fetchLast:(void(^)())aBlock;
+-(void)fecthLast:(void(^)())aBlock withMilliseconds:(int)milliseconds;
+-(void)fecthSince:(void(^)())aBlock withMilliseconds:(int)milliseconds;
 
 @end
