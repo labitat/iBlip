@@ -7,6 +7,7 @@
 //
 
 #import "iBlipAppDelegate.h"
+#import "LABBlipViewController.h"
 
 @implementation iBlipAppDelegate
 
@@ -16,6 +17,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    LABBlipViewController *blipViewController = [[LABBlipViewController alloc] initWithNibName:@"LABBlipViewController" bundle:nil];
+    [self.window setRootViewController:blipViewController];
     [self.window makeKeyAndVisible];
     return YES;
 }
