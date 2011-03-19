@@ -27,6 +27,16 @@
 		815242441334E75900E436CF /* LABCorePlotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 815242431334E75900E436CF /* LABCorePlotView.m */; };
 		B21B41C41335027F007CDCC2 /* ScatterPlot.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21B41C31335027F007CDCC2 /* ScatterPlot.xib */; };
 		B21B41C713350289007CDCC2 /* CPTestAppScatterPlotController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21B41C613350289007CDCC2 /* CPTestAppScatterPlotController.m */; };
+		1C55CEF0133512A800770377 /* LABParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CEEF133512A800770377 /* LABParser.m */; };
+		1C55CF23133515AF00770377 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CF12133515AF00770377 /* NSObject+JSON.m */; };
+		1C55CF24133515AF00770377 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CF14133515AF00770377 /* SBJsonParser.m */; };
+		1C55CF25133515AF00770377 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CF16133515AF00770377 /* SBJsonStreamParser.m */; };
+		1C55CF26133515AF00770377 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CF18133515AF00770377 /* SBJsonStreamParserAdapter.m */; };
+		1C55CF27133515AF00770377 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CF1A133515AF00770377 /* SBJsonStreamParserState.m */; };
+		1C55CF28133515AF00770377 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CF1C133515AF00770377 /* SBJsonStreamWriter.m */; };
+		1C55CF29133515AF00770377 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CF1E133515AF00770377 /* SBJsonStreamWriterState.m */; };
+		1C55CF2A133515AF00770377 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CF20133515AF00770377 /* SBJsonTokeniser.m */; };
+		1C55CF2B133515AF00770377 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CF22133515AF00770377 /* SBJsonWriter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +78,27 @@
 		B21B41C31335027F007CDCC2 /* ScatterPlot.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScatterPlot.xib; sourceTree = "<group>"; };
 		B21B41C513350289007CDCC2 /* CPTestAppScatterPlotController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTestAppScatterPlotController.h; sourceTree = "<group>"; };
 		B21B41C613350289007CDCC2 /* CPTestAppScatterPlotController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTestAppScatterPlotController.m; sourceTree = "<group>"; };
+		1C55CEEE133512A800770377 /* LABParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LABParser.h; path = iBlip/lib/LABParser.h; sourceTree = "<group>"; };
+		1C55CEEF133512A800770377 /* LABParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LABParser.m; path = iBlip/lib/LABParser.m; sourceTree = "<group>"; };
+		1C55CF10133515AF00770377 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		1C55CF11133515AF00770377 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
+		1C55CF12133515AF00770377 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
+		1C55CF13133515AF00770377 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		1C55CF14133515AF00770377 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		1C55CF15133515AF00770377 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		1C55CF16133515AF00770377 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		1C55CF17133515AF00770377 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		1C55CF18133515AF00770377 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		1C55CF19133515AF00770377 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		1C55CF1A133515AF00770377 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		1C55CF1B133515AF00770377 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		1C55CF1C133515AF00770377 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		1C55CF1D133515AF00770377 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		1C55CF1E133515AF00770377 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		1C55CF1F133515AF00770377 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		1C55CF20133515AF00770377 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		1C55CF21133515AF00770377 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		1C55CF22133515AF00770377 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +129,8 @@
 		1C55CEA01334BC5400770377 = {
 			isa = PBXGroup;
 			children = (
+				1C55CF0F133515AF00770377 /* json */,
+				1C55CEF11335152200770377 /* JSON */,
 				1C55CEE21334BDE700770377 /* Labitat Lib */,
 				8110D0911334D3320005409B /* QuartzCore.framework */,
 				1C55CEB51334BC5400770377 /* iBlip */,
@@ -176,6 +209,8 @@
 			children = (
 				1C55CEE41334BEA500770377 /* LABService.h */,
 				1C55CEE51334BEA500770377 /* LABService.m */,
+				1C55CEEE133512A800770377 /* LABParser.h */,
+				1C55CEEF133512A800770377 /* LABParser.m */,
 			);
 			name = "Labitat Lib";
 			sourceTree = "<group>";
@@ -209,6 +244,38 @@
 				815242431334E75900E436CF /* LABCorePlotView.m */,
 			);
 			name = Views;
+		1C55CEF11335152200770377 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		1C55CF0F133515AF00770377 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				1C55CF10133515AF00770377 /* JSON.h */,
+				1C55CF11133515AF00770377 /* NSObject+JSON.h */,
+				1C55CF12133515AF00770377 /* NSObject+JSON.m */,
+				1C55CF13133515AF00770377 /* SBJsonParser.h */,
+				1C55CF14133515AF00770377 /* SBJsonParser.m */,
+				1C55CF15133515AF00770377 /* SBJsonStreamParser.h */,
+				1C55CF16133515AF00770377 /* SBJsonStreamParser.m */,
+				1C55CF17133515AF00770377 /* SBJsonStreamParserAdapter.h */,
+				1C55CF18133515AF00770377 /* SBJsonStreamParserAdapter.m */,
+				1C55CF19133515AF00770377 /* SBJsonStreamParserState.h */,
+				1C55CF1A133515AF00770377 /* SBJsonStreamParserState.m */,
+				1C55CF1B133515AF00770377 /* SBJsonStreamWriter.h */,
+				1C55CF1C133515AF00770377 /* SBJsonStreamWriter.m */,
+				1C55CF1D133515AF00770377 /* SBJsonStreamWriterState.h */,
+				1C55CF1E133515AF00770377 /* SBJsonStreamWriterState.m */,
+				1C55CF1F133515AF00770377 /* SBJsonTokeniser.h */,
+				1C55CF20133515AF00770377 /* SBJsonTokeniser.m */,
+				1C55CF21133515AF00770377 /* SBJsonWriter.h */,
+				1C55CF22133515AF00770377 /* SBJsonWriter.m */,
+			);
+			name = json;
+			path = iBlip/classes/json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +393,16 @@
 				1C55CEEB1334BF3E00770377 /* LABBlipViewController.m in Sources */,
 				815242441334E75900E436CF /* LABCorePlotView.m in Sources */,
 				B21B41C713350289007CDCC2 /* CPTestAppScatterPlotController.m in Sources */,
+				1C55CEF0133512A800770377 /* LABParser.m in Sources */,
+				1C55CF23133515AF00770377 /* NSObject+JSON.m in Sources */,
+				1C55CF24133515AF00770377 /* SBJsonParser.m in Sources */,
+				1C55CF25133515AF00770377 /* SBJsonStreamParser.m in Sources */,
+				1C55CF26133515AF00770377 /* SBJsonStreamParserAdapter.m in Sources */,
+				1C55CF27133515AF00770377 /* SBJsonStreamParserState.m in Sources */,
+				1C55CF28133515AF00770377 /* SBJsonStreamWriter.m in Sources */,
+				1C55CF29133515AF00770377 /* SBJsonStreamWriterState.m in Sources */,
+				1C55CF2A133515AF00770377 /* SBJsonTokeniser.m in Sources */,
+				1C55CF2B133515AF00770377 /* SBJsonWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
