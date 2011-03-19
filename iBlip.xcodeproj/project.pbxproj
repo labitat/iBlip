@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C55CEB01334BC5400770377 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C55CEAF1334BC5400770377 /* UIKit.framework */; };
+		1C55CEB21334BC5400770377 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C55CEB11334BC5400770377 /* Foundation.framework */; };
+		1C55CEB41334BC5400770377 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C55CEB31334BC5400770377 /* CoreGraphics.framework */; };
+		1C55CEBA1334BC5400770377 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C55CEB81334BC5400770377 /* InfoPlist.strings */; };
+		1C55CEBD1334BC5400770377 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CEBC1334BC5400770377 /* main.m */; };
+		1C55CEC01334BC5400770377 /* iBlipAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CEBF1334BC5400770377 /* iBlipAppDelegate.m */; };
+		1C55CEC31334BC5400770377 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C55CEC11334BC5400770377 /* MainWindow.xib */; };
+		1C55CECA1334BC5400770377 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C55CEAF1334BC5400770377 /* UIKit.framework */; };
+		1C55CECB1334BC5400770377 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C55CEB11334BC5400770377 /* Foundation.framework */; };
+		1C55CECC1334BC5400770377 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C55CEB31334BC5400770377 /* CoreGraphics.framework */; };
+		1C55CED41334BC5400770377 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C55CED21334BC5400770377 /* InfoPlist.strings */; };
+		1C55CED71334BC5400770377 /* iBlipTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 1C55CED61334BC5400770377 /* iBlipTests.h */; };
+		1C55CED91334BC5400770377 /* iBlipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CED81334BC5400770377 /* iBlipTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C55CECD1334BC5400770377 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C55CEA21334BC5400770377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C55CEAA1334BC5400770377;
+			remoteInfo = iBlip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C55CEAB1334BC5400770377 /* iBlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C55CEAF1334BC5400770377 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1C55CEB11334BC5400770377 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1C55CEB31334BC5400770377 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1C55CEB71334BC5400770377 /* iBlip-Info.plist */ = {isa = PBXFileReference; path = "iBlip-Info.plist"; sourceTree = "<group>"; };
+		1C55CEB91334BC5400770377 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1C55CEBB1334BC5400770377 /* iBlip-Prefix.pch */ = {isa = PBXFileReference; path = "iBlip-Prefix.pch"; sourceTree = "<group>"; };
+		1C55CEBC1334BC5400770377 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C55CEBE1334BC5400770377 /* iBlipAppDelegate.h */ = {isa = PBXFileReference; path = iBlipAppDelegate.h; sourceTree = "<group>"; };
+		1C55CEBF1334BC5400770377 /* iBlipAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBlipAppDelegate.m; sourceTree = "<group>"; };
+		1C55CEC21334BC5400770377 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		1C55CEC91334BC5400770377 /* iBlipTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBlipTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C55CED11334BC5400770377 /* iBlipTests-Info.plist */ = {isa = PBXFileReference; path = "iBlipTests-Info.plist"; sourceTree = "<group>"; };
+		1C55CED31334BC5400770377 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1C55CED51334BC5400770377 /* iBlipTests-Prefix.pch */ = {isa = PBXFileReference; path = "iBlipTests-Prefix.pch"; sourceTree = "<group>"; };
+		1C55CED61334BC5400770377 /* iBlipTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iBlipTests.h; sourceTree = "<group>"; };
+		1C55CED81334BC5400770377 /* iBlipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBlipTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C55CEA81334BC5400770377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C55CEB01334BC5400770377 /* UIKit.framework in Frameworks */,
+				1C55CEB21334BC5400770377 /* Foundation.framework in Frameworks */,
+				1C55CEB41334BC5400770377 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C55CEC51334BC5400770377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C55CECA1334BC5400770377 /* UIKit.framework in Frameworks */,
+				1C55CECB1334BC5400770377 /* Foundation.framework in Frameworks */,
+				1C55CECC1334BC5400770377 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C55CEA01334BC5400770377 = {
+			isa = PBXGroup;
+			children = (
+				1C55CEB51334BC5400770377 /* iBlip */,
+				1C55CECF1334BC5400770377 /* iBlipTests */,
+				1C55CEAE1334BC5400770377 /* Frameworks */,
+				1C55CEAC1334BC5400770377 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C55CEAC1334BC5400770377 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C55CEAB1334BC5400770377 /* iBlip.app */,
+				1C55CEC91334BC5400770377 /* iBlipTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C55CEAE1334BC5400770377 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C55CEAF1334BC5400770377 /* UIKit.framework */,
+				1C55CEB11334BC5400770377 /* Foundation.framework */,
+				1C55CEB31334BC5400770377 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C55CEB51334BC5400770377 /* iBlip */ = {
+			isa = PBXGroup;
+			children = (
+				1C55CEBE1334BC5400770377 /* iBlipAppDelegate.h */,
+				1C55CEBF1334BC5400770377 /* iBlipAppDelegate.m */,
+				1C55CEC11334BC5400770377 /* MainWindow.xib */,
+				1C55CEB61334BC5400770377 /* Supporting Files */,
+			);
+			path = iBlip;
+			sourceTree = "<group>";
+		};
+		1C55CEB61334BC5400770377 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C55CEB71334BC5400770377 /* iBlip-Info.plist */,
+				1C55CEB81334BC5400770377 /* InfoPlist.strings */,
+				1C55CEBB1334BC5400770377 /* iBlip-Prefix.pch */,
+				1C55CEBC1334BC5400770377 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1C55CECF1334BC5400770377 /* iBlipTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C55CED61334BC5400770377 /* iBlipTests.h */,
+				1C55CED81334BC5400770377 /* iBlipTests.m */,
+				1C55CED01334BC5400770377 /* Supporting Files */,
+			);
+			path = iBlipTests;
+			sourceTree = "<group>";
+		};
+		1C55CED01334BC5400770377 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C55CED11334BC5400770377 /* iBlipTests-Info.plist */,
+				1C55CED21334BC5400770377 /* InfoPlist.strings */,
+				1C55CED51334BC5400770377 /* iBlipTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C55CEAA1334BC5400770377 /* iBlip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C55CEDC1334BC5400770377 /* Build configuration list for PBXNativeTarget "iBlip" */;
+			buildPhases = (
+				1C55CEA71334BC5400770377 /* Sources */,
+				1C55CEA81334BC5400770377 /* Frameworks */,
+				1C55CEA91334BC5400770377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iBlip;
+			productName = iBlip;
+			productReference = 1C55CEAB1334BC5400770377 /* iBlip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C55CEC81334BC5400770377 /* iBlipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C55CEDF1334BC5400770377 /* Build configuration list for PBXNativeTarget "iBlipTests" */;
+			buildPhases = (
+				1C55CEC41334BC5400770377 /* Sources */,
+				1C55CEC51334BC5400770377 /* Frameworks */,
+				1C55CEC61334BC5400770377 /* Resources */,
+				1C55CEC71334BC5400770377 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C55CECE1334BC5400770377 /* PBXTargetDependency */,
+			);
+			name = iBlipTests;
+			productName = iBlipTests;
+			productReference = 1C55CEC91334BC5400770377 /* iBlipTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C55CEA21334BC5400770377 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Xstream Media Solutions";
+			};
+			buildConfigurationList = 1C55CEA51334BC5400770377 /* Build configuration list for PBXProject "iBlip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1C55CEA01334BC5400770377;
+			productRefGroup = 1C55CEAC1334BC5400770377 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C55CEAA1334BC5400770377 /* iBlip */,
+				1C55CEC81334BC5400770377 /* iBlipTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C55CEA91334BC5400770377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C55CEBA1334BC5400770377 /* InfoPlist.strings in Resources */,
+				1C55CEC31334BC5400770377 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C55CEC61334BC5400770377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C55CED41334BC5400770377 /* InfoPlist.strings in Resources */,
+				1C55CED71334BC5400770377 /* iBlipTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C55CEC71334BC5400770377 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C55CEA71334BC5400770377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C55CEBD1334BC5400770377 /* main.m in Sources */,
+				1C55CEC01334BC5400770377 /* iBlipAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C55CEC41334BC5400770377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C55CED91334BC5400770377 /* iBlipTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C55CECE1334BC5400770377 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C55CEAA1334BC5400770377 /* iBlip */;
+			targetProxy = 1C55CECD1334BC5400770377 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C55CEB81334BC5400770377 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C55CEB91334BC5400770377 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1C55CEC11334BC5400770377 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C55CEC21334BC5400770377 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		1C55CED21334BC5400770377 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C55CED31334BC5400770377 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C55CEDA1334BC5400770377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1C55CEDB1334BC5400770377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		1C55CEDD1334BC5400770377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBlip/iBlip-Prefix.pch";
+				INFOPLIST_FILE = "iBlip/iBlip-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1C55CEDE1334BC5400770377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBlip/iBlip-Prefix.pch";
+				INFOPLIST_FILE = "iBlip/iBlip-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1C55CEE01334BC5400770377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iBlip.app/iBlip";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBlipTests/iBlipTests-Prefix.pch";
+				INFOPLIST_FILE = "iBlipTests/iBlipTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1C55CEE11334BC5400770377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iBlip.app/iBlip";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBlipTests/iBlipTests-Prefix.pch";
+				INFOPLIST_FILE = "iBlipTests/iBlipTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C55CEA51334BC5400770377 /* Build configuration list for PBXProject "iBlip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C55CEDA1334BC5400770377 /* Debug */,
+				1C55CEDB1334BC5400770377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C55CEDC1334BC5400770377 /* Build configuration list for PBXNativeTarget "iBlip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C55CEDD1334BC5400770377 /* Debug */,
+				1C55CEDE1334BC5400770377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1C55CEDF1334BC5400770377 /* Build configuration list for PBXNativeTarget "iBlipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C55CEE01334BC5400770377 /* Debug */,
+				1C55CEE11334BC5400770377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C55CEA21334BC5400770377 /* Project object */;
+}
