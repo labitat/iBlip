@@ -37,7 +37,7 @@
 
 #pragma mark - View lifecycle
 
-- (NSNumber *) numberForPlot: (CPPlot *) plot field: (NSUInteger) fieldEnum recordIndex:(NSUInteger)index
+- (NSNumber *) numberForPlot: (CPPlot *)plot field: (NSUInteger) fieldEnum recordIndex:(NSUInteger)index
 {
     NSLog(@"Foo");
     return [NSNumber numberWithInt:42] ;
@@ -54,15 +54,22 @@
 {
     [super viewDidLoad];
     
+    
+    
     LABCorePlotView *coreplotview=[[LABCorePlotView alloc]initWithFrame:CGRectMake(0, 200, 300, 200)];
+    
     CPPlot *plot = [[CPPlot alloc]init];
     plot.dataSource=self;
     plot.delegate=self;
+    
     [[coreplotview graph] addPlot:plot];
+    [plot release];
+
     [[self view] addSubview:coreplotview];
+    [coreplotview release];
     
+    LABService *service = [[LABService alloc] init];
     
-        LABService *service = [[LABService alloc] init];
     [service fetchBlip:^(NSString *dataString) {
         NSLog(@"Data: %@", dataString);
         [blip setText:dataString];

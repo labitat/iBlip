@@ -36,6 +36,7 @@
 
 - (void)dealloc
 {
+    [graph release];
     [super dealloc];
 }
 
