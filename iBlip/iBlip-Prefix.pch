@@ -3,6 +3,7 @@
 //
 
 #import <Availability.h>
+#import <CorePlot/CorePlot.h>
 
 #ifndef __IPHONE_3_0
 #warning "This project uses features only available in iPhone SDK 3.0 and later."
@@ -12,3 +13,4 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+ 
