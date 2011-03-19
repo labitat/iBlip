@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CPTestAppScatterPlotController.h"
 
 @interface iBlipAppDelegate : NSObject <UIApplicationDelegate> {
 
