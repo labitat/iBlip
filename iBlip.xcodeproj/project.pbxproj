@@ -37,17 +37,17 @@
 		1C55CEAF1334BC5400770377 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1C55CEB11334BC5400770377 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1C55CEB31334BC5400770377 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1C55CEB71334BC5400770377 /* iBlip-Info.plist */ = {isa = PBXFileReference; path = "iBlip-Info.plist"; sourceTree = "<group>"; };
+		1C55CEB71334BC5400770377 /* iBlip-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBlip-Info.plist"; sourceTree = "<group>"; };
 		1C55CEB91334BC5400770377 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1C55CEBB1334BC5400770377 /* iBlip-Prefix.pch */ = {isa = PBXFileReference; path = "iBlip-Prefix.pch"; sourceTree = "<group>"; };
+		1C55CEBB1334BC5400770377 /* iBlip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBlip-Prefix.pch"; sourceTree = "<group>"; };
 		1C55CEBC1334BC5400770377 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1C55CEBE1334BC5400770377 /* iBlipAppDelegate.h */ = {isa = PBXFileReference; path = iBlipAppDelegate.h; sourceTree = "<group>"; };
+		1C55CEBE1334BC5400770377 /* iBlipAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iBlipAppDelegate.h; sourceTree = "<group>"; };
 		1C55CEBF1334BC5400770377 /* iBlipAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBlipAppDelegate.m; sourceTree = "<group>"; };
 		1C55CEC21334BC5400770377 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		1C55CEC91334BC5400770377 /* iBlipTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBlipTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C55CED11334BC5400770377 /* iBlipTests-Info.plist */ = {isa = PBXFileReference; path = "iBlipTests-Info.plist"; sourceTree = "<group>"; };
+		1C55CED11334BC5400770377 /* iBlipTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBlipTests-Info.plist"; sourceTree = "<group>"; };
 		1C55CED31334BC5400770377 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1C55CED51334BC5400770377 /* iBlipTests-Prefix.pch */ = {isa = PBXFileReference; path = "iBlipTests-Prefix.pch"; sourceTree = "<group>"; };
+		1C55CED51334BC5400770377 /* iBlipTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBlipTests-Prefix.pch"; sourceTree = "<group>"; };
 		1C55CED61334BC5400770377 /* iBlipTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iBlipTests.h; sourceTree = "<group>"; };
 		1C55CED81334BC5400770377 /* iBlipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBlipTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
