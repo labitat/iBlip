@@ -23,6 +23,7 @@
 		1C55CEE61334BEA500770377 /* LABService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CEE51334BEA500770377 /* LABService.m */; };
 		1C55CEEB1334BF3E00770377 /* LABBlipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C55CEE91334BF3E00770377 /* LABBlipViewController.m */; };
 		1C55CEEC1334BF3E00770377 /* LABBlipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C55CEEA1334BF3E00770377 /* LABBlipViewController.xib */; };
+		8110D0921334D3320005409B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8110D0911334D3320005409B /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		1C55CEE81334BF3E00770377 /* LABBlipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LABBlipViewController.h; path = classes/controllers/LABBlipViewController.h; sourceTree = "<group>"; };
 		1C55CEE91334BF3E00770377 /* LABBlipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LABBlipViewController.m; path = classes/controllers/LABBlipViewController.m; sourceTree = "<group>"; };
 		1C55CEEA1334BF3E00770377 /* LABBlipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LABBlipViewController.xib; path = classes/controllers/LABBlipViewController.xib; sourceTree = "<group>"; };
+		8110D0911334D3320005409B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8110D0921334D3320005409B /* QuartzCore.framework in Frameworks */,
 				1C55CEB01334BC5400770377 /* UIKit.framework in Frameworks */,
 				1C55CEB21334BC5400770377 /* Foundation.framework in Frameworks */,
 				1C55CEB41334BC5400770377 /* CoreGraphics.framework in Frameworks */,
@@ -88,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				1C55CEE21334BDE700770377 /* Labitat Lib */,
+				8110D0911334D3320005409B /* QuartzCore.framework */,
 				1C55CEB51334BC5400770377 /* iBlip */,
 				1C55CECF1334BC5400770377 /* iBlipTests */,
 				1C55CEAE1334BC5400770377 /* Frameworks */,
@@ -348,6 +352,7 @@
 		1C55CEDA1334BC5400770377 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "/Library/SDKs/CorePlotSDK/${PLATFORM_NAME}.sdk";
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -358,6 +363,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-all_load",
+					"-lCorePlot",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -365,6 +375,7 @@
 		1C55CEDB1334BC5400770377 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "/Library/SDKs/CorePlotSDK/${PLATFORM_NAME}.sdk";
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -373,6 +384,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-all_load",
+					"-lCorePlot",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -468,6 +484,7 @@
 				1C55CEDE1334BC5400770377 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C55CEDF1334BC5400770377 /* Build configuration list for PBXNativeTarget "iBlipTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +493,7 @@
 				1C55CEE11334BC5400770377 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
